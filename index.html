@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tulum Homes - Propiedades en la Riviera Maya</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background: #fdfcf9;
+      color: #333;
+    }
+    header {
+      background: url('hero.jpg') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+    header::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.4);
+    }
+    header .content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+      padding: 0 20px;
+    }
+    header h1 {
+      font-size: 3rem;
+      font-weight: 300;
+      margin-bottom: 1rem;
+    }
+    header p {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+    }
+    header a {
+      background: white;
+      color: #000;
+      text-decoration: none;
+      padding: 0.75rem 1.5rem;
+      margin: 0.5rem;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card .info {
+      padding: 1rem;
+    }
+
+    .card .info h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    .card .info p {
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    footer {
+      background: #eee;
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="content">
+    <h1>Encuentra Tu Propiedad Ideal en Tulum</h1>
+    <p>Desde villas de lujo frente al mar hasta terrenos únicos para invertir</p>
+    <a href="#propiedades">Explorar Propiedades</a>
+    <a href="#contacto">Contáctanos Hoy</a>
+  </div>
+</header>
+
+<section id="propiedades">
+  <h2>Propiedades Exclusivas</h2>
+  <div class="gallery">
+    <div class="card">
+      <img src="baikal.jpg" alt="Villa Baikal" />
+      <div class="info">
+        <h3>Villa Baikal</h3>
+        <p>Dentro de Tulum Country Club. 3 recámaras, alberca privada, arquitectura natural.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="villa-sol.jpg" alt="Villa Sol y Mar" />
+      <div class="info">
+        <h3>Villa Sol y Mar</h3>
+        <p>4 habitaciones, piscina infinita, vistas al Caribe. Lujo tropical frente al mar.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="aldea-zama.jpg" alt="Terreno Aldea Zama" />
+      <div class="info">
+        <h3>Terreno Aldea Zama</h3>
+        <p>Zona de alta plusvalía en el corazón de Tulum. Ideal para desarrollo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2024 Tulum Homes · info@tulumhomes.us
+</footer>
+
+</body>
+</html>
